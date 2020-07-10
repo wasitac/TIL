@@ -1,12 +1,12 @@
 class User:
     #클래스 만들 때 이름첫글자는 항상 대문자
-    def say_hello(some_user):
+    def say_hello(self):
         #인사메세지 출력 메소드
-        print("안녕하세여! 저는 {}입니다!".format(some_user.name))
+        print("안녕하세여! 저는 {}입니다!".format(self.name))
 
-    def login(some_user, my_email, my_password):
+    def login(self, my_email, my_password):
         #로그인 메소드
-        if(some_user.email == my_email and some_user.password == my_password):
+        if(self.email == my_email and self.password == my_password):
             print("로그인 성공, 환영합니다")
         else:
             print("로그인실패")
